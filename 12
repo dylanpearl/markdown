@@ -1,0 +1,30 @@
+---
+title: R Markdown 
+author: Dylan Pearl
+output: html_document
+---
+
+# Introduction
+
+This is an example of using R Markdown to make R code, perform calculations, and visualize results. Below is a simple R code chunk that calculates the sum of numbers from 1 to 10 and displays a plot.
+
+# Sum Calculation
+
+numbers <- 1:10
+sum_numbers <- sum(numbers)
+
+sum_numbers
+
+# Plot Example
+
+plot(numbers, 
+     type = "o",               # 'o' means both points and lines
+     col = "blue",             # Line color
+     pch = 16,                 # Point shape (solid circle)
+     main = "Simple Plot of Numbers",  # Plot title
+     xlab = "Index",           # X-axis label
+     ylab = "Value",           # Y-axis label
+     lwd = 2                   # Line width
+)
+
+grid()
